@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/bg5"
+    tools:context="com.example.burhan.thescorekeeper.SelectMatchType"
+    xmlns:ads = "http://schemas.android.com/apk/res-auto">
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Knockout Game"
+        android:textColor="#ffffff"
+        android:id="@+id/button"
+        android:background="@drawable/mybutton"
+        android:onClick="knockout"
+        android:layout_marginTop="120dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Group Game"
+        android:textColor="#ffffff"
+        android:onClick="group"
+        android:background="@drawable/mybutton"
+        android:layout_below="@+id/button"
+        android:layout_marginTop="40dp"
+        android:id="@+id/button3"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <Spinner
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/sGroupNo"
+        android:visibility="invisible"
+        android:layout_below="@+id/button3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp" />
+
+    <Button
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:textColor="#ffffff"
+        android:id="@+id/bGroupNext"
+        android:visibility="invisible"
+        android:onClick="next"
+        android:layout_below="@+id/sGroupNo"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/mybutton"/>
+    <com.google.android.gms.ads.AdView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/adView"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-2911937502615384/1713833750"/>
+</RelativeLayout>

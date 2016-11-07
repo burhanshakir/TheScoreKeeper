@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">The Score Keeper</string>
+    <string name="select_sport">Select Sport</string>
+    <string name="create">Create</string>
+    <string-array name="sport_array">
+        <item>Football</item>
+        <item>Cricket</item>
+    </string-array>
+    <string-array name="tournament_array">
+        <item>Friendly Match</item>
+        <item>Group and Knockout</item>
+        <item>Knockout</item>
+        <item>League</item>
+    </string-array>
+    <string name="title_activity_score_fragment">ScoreFragment</string>
+    <string name="title_activity_lineup_fragment">LineupFragment</string>
+    <string name="title_activity_load_score_fragment">LoadScoreFragment</string>
+    <string name="title_activity_load_lineup_fragment">LoadLineupFragment</string>
+</resources>

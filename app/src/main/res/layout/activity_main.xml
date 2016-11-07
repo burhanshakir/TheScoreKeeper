@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ads = "http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.burhan.thescorekeeper.MainActivity"
+    android:background="@drawable/bg7">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/select_sport"
+        android:id="@+id/textView"
+        android:layout_marginTop="164dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Spinner
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinnerSport"
+        android:spinnerMode="dropdown"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        />
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Create a New Tournament"
+        android:textColor="#FFFFFF"
+        android:id="@+id/bCreate"
+        android:background="@drawable/mybutton"
+        android:onClick="newT"
+        android:layout_marginTop="75dp"
+        android:layout_below="@+id/spinnerSport"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Your Score Shelf"
+        android:textColor="#FFFFFF"
+        android:id="@+id/bLoad"
+        android:background="@drawable/mybutton"
+        android:onClick="load"
+        android:layout_below="@+id/bCreate"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        />
+    <com.google.android.gms.ads.AdView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/adView"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-2911937502615384/1713833750"/>
+</RelativeLayout>
